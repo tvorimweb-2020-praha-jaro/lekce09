@@ -1,0 +1,26 @@
+main,
+p {
+    padding: 1rem;
+}
+
+main {
+    height: 350px;
+    background-color: darkkhaki;
+}
+
+p {
+    background-color: cornflowerblue;
+}
+
+/* ----------------------------- */
+
+main {
+    position: relative;
+    text-align: center;
+}
+
+p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}

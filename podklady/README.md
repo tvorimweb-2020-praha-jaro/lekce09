@@ -4,13 +4,15 @@ Krátký odkaz na stažení: [https://is.gd/webaz10](https://is.gd/webaz10)
 
 ## Příklady
 
-- [CSS Specificita](priklady/01-specificita)
+- [Centrování prvků](priklady/01-centrovani)
+- [CSS Specificita](priklady/02-specificita)
   - [Specificity calculator](https://specificity.keegan.st)
   - [Specificity with Fish](https://specifishity.com)
   - [CSS specificity Wars](https://stuffandnonsense.co.uk/archives/css_specificity_wars.html )
-- [Pseudotřídy](priklady/02-pseudotridy)
+- [Pseudotřídy](priklady/03-pseudotridy)
   - [CSS Diner](https://flukeout.github.io/)
-- [Pseudoelementy](priklady/03-pseudoelementy)
+- [Pseudoelementy](priklady/04-pseudoelementy)
+- [CSS custom properties](priklady/05-custom-properties)
 
 ## Selektory a&nbsp;jejich specificita
 

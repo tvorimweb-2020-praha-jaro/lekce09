@@ -1,0 +1,73 @@
+main,
+p {
+    padding: 1rem;
+}
+
+main {
+    height: 350px;
+    background-color: darkkhaki;
+}
+
+p {
+    width: 400px;
+    background-color: cornflowerblue;
+}
+
+/* ----------------------------- */
+
+/* 1. centrování inline prvků */
+/* main {
+    text-align: center; vycentruje inlinové prvky
+}
+
+p {
+    display: inline-block; reaguje na text-align: center nadřazeného prvku
+} */
+/*
+
+/* 2. obecně platné centrování blokových prvků */
+/* p {
+    margin: auto;
+}
+ */
+
+/* 3. flexbox */
+/* main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* 4. flexbox „trik“ */
+/* main {
+    display: flex;
+}
+
+p {
+    margin: auto;
+} */
+
+/* 6. absolutně pozicovaný prvek ve flexboxu */
+/* main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    position: absolute;
+} */
+
+/* 6. absolutně pozicovaný prvek známé šířky mimo flexbox */
+/* p {
+    position: absolute;
+    left: calc(50% - 200px);
+} */
+
+/* 7. absolutně pozicovaný prvek neznámé šířky mimo flexbox */
+/* p {
+    width: auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+} */
