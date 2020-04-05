@@ -5,6 +5,7 @@ Krátký odkaz na stažení: [https://is.gd/webaz10](https://is.gd/webaz10)
 ## Příklady
 
 - [Centrování prvků](priklady/01-centrovani)
+- [Způsoby připojení CSS](#způsoby-připojení-css)
 - [CSS Specificita](priklady/02-specificita)
   - [Specificity calculator](https://specificity.keegan.st)
   - [Specificity with Fish](https://specifishity.com)
@@ -13,6 +14,44 @@ Krátký odkaz na stažení: [https://is.gd/webaz10](https://is.gd/webaz10)
   - [CSS Diner](https://flukeout.github.io/)
 - [Pseudoelementy](priklady/04-pseudoelementy)
 - [CSS custom properties](priklady/05-custom-properties)
+
+## Způsoby připojení CSS
+
+Zatím jsme se seznámili s připojením CSS jako externího souboru pomocí značky `link`. Je to asi nejběžnější způsob a v mnoha ohledech nejvýhodnější, ale je dobré znát i ostatní možnosti, protože i ty mají své použití. A přinejmenším se s nimi můžete setkat na jiných projektech. 
+
+1. externí soubor nebo více souborů CSS pomocí tagu `link`
+    Známe již celkem důvěrně, pouze poznamenáme, že lze takto připojit i více souborů CSS (jeden pro obecné styly písma  a barev, další pro konkrétní stránku), aby se zbytečně nestahovaly styly, které se na stránce nepoužijí.
+    
+    ```html
+    <link rel="stylesheet" href="/styles/typography.css">
+    <link rel="stylesheet" href="/styles/contact.css">
+    ```
+
+2. přímo v HTML prostřednictvím značky `style`
+    Párová značka `style` vlastně vyznačí místo v HTML dokumentu, kam lze psát CSS. Takový to blok CSS kódu lze umístit kamkoli do dokumentu, včetně prvku `head`, což je nejběžnější užití toho zápisu. Zapisují se do něho například styly, které chceme mít na stránce vykresleny okamžitě (bez nutnosti čekat na načtení velkého souboru CSS), ale to již spíše zastaralý způsob.
+
+    ```html
+    <style>
+    /* CSS komentář */
+    body {
+        max-width: 1600px;
+    }
+
+    p {
+        margin-bottom: 1rem;
+    }
+    </style>
+    ```
+
+3. tzv. inline styly, přímo do otvírací značky prostřednictvím atributu `style`
+    Někdy nemáme možnost zasáhnout do kódu jinak než tímto způsobem. Nejčastěji jsme k tomu nuceni při úpravě obsahu stránky přes nějaký redakční systém. Dále se tento způsob využívá při tvorbě HTML e-mailů.
+    
+    `<p style="max-width: 20rem; color: silver;">Text odstavce s maximální šířkou 20 rem a šedou barvou písma.</p> `
+
+4. pomocí jazyka JavaScript
+    Uvádíme pouze pro úplnost, protože s JavaScriptem jsme se dosud nesetkali.
+
+Pozor, poslední dva způsoby nemohou využít plnou škálu možnosti CSS (například nezapíšete stavové styly pro `:hover` či `:focus`).
 
 ## Selektory a&nbsp;jejich specificita
 
