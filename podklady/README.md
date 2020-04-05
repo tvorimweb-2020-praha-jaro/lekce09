@@ -6,14 +6,13 @@ Krátký odkaz na stažení: [https://is.gd/webaz10](https://is.gd/webaz10)
 
 - [Centrování prvků](priklady/01-centrovani)
 - [Způsoby připojení CSS](#způsoby-připojení-css)
-- [CSS Specificita](priklady/02-specificita)
-  - [Specificity calculator](https://specificity.keegan.st)
-  - [Specificity with Fish](https://specifishity.com)
-  - [CSS specificity Wars](https://stuffandnonsense.co.uk/archives/css_specificity_wars.html )
+- [CSS Specificita](#selektory-ajejich-specificita)  
 - [Pseudotřídy](priklady/03-pseudotridy)
   - [CSS Diner](https://flukeout.github.io/)
 - [Pseudoelementy](priklady/04-pseudoelementy)
 - [CSS custom properties](priklady/05-custom-properties)
+
+---
 
 ## Způsoby připojení CSS
 
@@ -53,6 +52,8 @@ Zatím jsme se seznámili s připojením CSS jako externího souboru pomocí zna
 
 Pozor, poslední dva způsoby nemohou využít plnou škálu možnosti CSS (například nezapíšete stavové styly pro `:hover` či `:focus`).
 
+---
+
 ## Selektory a&nbsp;jejich specificita
 
 Selektory používáme k&nbsp;zacílení konkrétní sady CSS pravidel na zvolený prvek (skupinu prvků) v&nbsp;HTML dokumentu. Musíme tedy mít jasno v&nbsp;tom, na který prvek/prvky se pravidla uplatní.
@@ -91,9 +92,9 @@ h4 {
 - prvek s&nbsp;konkrétním atributem
 
 ```css
-/* prvkům s atributem `role` přidej spodní ohraničení */
-[role] {
-    border-bottom: 1px solid silver;
+/* prvkům (tedy obrázkům) s atributem `alt` přidej spodní ohraničení */
+[alt] {
+    border: 1px solid silver;
 }
 
 ```
@@ -101,9 +102,9 @@ h4 {
 - prvek s&nbsp;konkrétní hodnotou atributu
 
 ```css
-/* prvku s atributem `role` s&nbsp;hodnotou main přebarvi spodní ohraničení na růžovou */
-[role="main"] {
-    border-bottom-color: pink;
+/* obrázky s prázdným atributem `alt` orámuj karmínově */
+[alt=""] {
+    border-color: crimson;
 }
 
 ```
@@ -218,6 +219,12 @@ Jiný příklad
 <p class="perex main">Úvodní odstavec nějakého článku…</p>
 ```
 
+- [Specificity calculator](https://specificity.keegan.st)
+- [Specificity with Fish](https://specifishity.com)
+- [CSS specificity Wars](https://stuffandnonsense.co.uk/archives/css_specificity_wars.html )
+
+---
+
 ## Pseudotřídy
 
 Názvy tříd jsou záležitostí kódéra. Nicméně CSS nabízí tzv. pseudotřídy, které mají jednak předem definovaný název a stejně tak definovaný selektor, na který zacílí. Pseudotříd je celá řada, a některé už dokonce znáš. Jsou to pseudotřídy, které se vážou ke stavu odkazu (elementu `<a>`):
@@ -278,6 +285,8 @@ Z dalších přseudotříd věnuj pozornost těmto (subjektivní výběr):
 - vícejazyčné weby ‒ `:lang`
 
 Samostudium na [Je čas od Bohumila Jahody](http://jecas.cz/css-selektory)
+
+---
 
 ## Pseudoelementy `::before` a `::after`
 
