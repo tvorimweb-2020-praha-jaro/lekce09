@@ -179,7 +179,7 @@ Jiný příklad
 
 ## Pseudotřídy
 
-Názvy tříd jsou záležitostí kódére. Nicméně CSS nabízí tzv. pseudotřídy, které mají jednak předem definovaný název a stejně tak definovaný selektor, na který zacílí. Pseudotříd je celá řada, a některé už dokonce znáš. Jsou to pseudotřídy, které se vážou ke stavu odkazu (elementu `<a>`):
+Názvy tříd jsou záležitostí kódéra. Nicméně CSS nabízí tzv. pseudotřídy, které mají jednak předem definovaný název a stejně tak definovaný selektor, na který zacílí. Pseudotříd je celá řada, a některé už dokonce znáš. Jsou to pseudotřídy, které se vážou ke stavu odkazu (elementu `<a>`):
 
 - `:link` odkaz
 - `:visited` navštívený odkaz
