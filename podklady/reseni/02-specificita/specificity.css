@@ -1,37 +1,46 @@
 /* Selektory čteme odzadu (od otvírací složené závorky směrem k začátku řádku) */
 
+/* 1,0,0 */
 #page-title {
     color: goldenrod;
 }
 
+/* 0,2,2 */
 header h1.heading.heading--main {
     color: hotpink;
 }
 
+/* 0,2,1 */
 h1.heading.heading--main {
     color: green;
 }
 
+/* 0,2,0 */
 .heading.heading--main {
     color: silver;
 }
 
+/* 0,1,1 */
 h1.heading--main {
     color: maroon;
 }
 
+/* 0,1,0 */
 .heading--main {
     color: crimson;
 }
 
+/* 0,0,2 */
 header h1 {
     color: aqua;
 }
 
+/* 0,0,1 */
 h1 {
     color: black !important;
 }
 
+/* 0,0,1 */
 h1 {
     color: orange;
 }

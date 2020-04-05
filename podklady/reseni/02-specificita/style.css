@@ -1,0 +1,47 @@
+/* Selektory čteme odzadu (od otvírací složené závorky směrem k začátku řádku) */
+
+/* číslovaný seznam */
+ol {
+    list-style-type: upper-roman;
+    color: crimson;
+}
+
+/* číslovaný seznam zanořený v číslovaném seznamu */
+ol ol {
+    list-style-type: upper-alpha;
+}
+
+/* číslovaný seznam, který je přímým potomkem list-item */
+li > ol {
+    list-style-type: lower-alpha;
+}
+
+/* číslovaný seznam zanořený v číslovaném seznamu,který je zanořen v číslovaném seznamu */
+ol ol ol {
+    list-style-type: decimal-leading-zero;
+}
+
+/* číslovaný seznam, který následuje bezprostředně po span */
+small + ol {
+    color: lightsalmon;
+}
+
+/* číslovaný seznam, který následuje po emphasis */
+em ~ ol {
+    color: green;
+}
+
+/* číslovaný seznam, který následuje po strong (nemusí následovat bezprostředně) */
+strong ~ ol {
+    color: navy;
+}
+
+/* span, který následuje bezprostředně po div */
+div + span {
+    font-weight: 700;
+}
+
+/* číslovaný seznam, jenž je přímým potomkem list-item, které je prvním potomkem svého rodiče */
+li:first-child > ol {
+    list-style-type: lower-greek;
+}

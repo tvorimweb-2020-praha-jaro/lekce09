@@ -1,0 +1,13 @@
+#attic.list,
+#attic.list strong,
+li.list  em.tip,
+.list .list .tip,
+.list .list-item,
+.mess-list .list #garden,
+#tools #wrench,
+.mess-list #tools.list,
+.mess-list li.list,
+ol.list {
+    background-color: #fff;
+    color: black;
+}

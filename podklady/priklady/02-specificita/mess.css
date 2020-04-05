@@ -1,0 +1,44 @@
+.mess-list #tools {
+    background-color: crimson;
+}
+
+.mess-list .list {
+    color: purple
+}
+
+li#wrench {
+    background-color: black;
+    color: orange;
+}
+
+.list em.tip {
+    color: dodgerblue
+}
+
+#attic {
+    color: aquamarine;
+}
+
+.list-item {
+    background-color: grey;
+}
+
+.list {
+    background-color: goldenrod;
+}
+
+.list #garden {
+    color: teal;
+}
+
+.list-item.tip {
+    color: navy;
+}
+
+#attic strong {
+    color: #fff;
+}
+
+.list .tip {
+    background-color: maroon;
+}
