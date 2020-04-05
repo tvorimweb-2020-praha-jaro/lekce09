@@ -1,0 +1,8 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+*, ::after, ::before { box-sizing: border-box; }
+
+/*
+	--primary-color: #b40000;
+	--secondary-color: #006c6c;
+	--tertiary-color: #70a800;
+*/
