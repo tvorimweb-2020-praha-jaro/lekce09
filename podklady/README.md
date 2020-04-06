@@ -331,3 +331,36 @@ Předchozí pravidla nám za prvkem `blockquote` vytvoří pruh přes celou ší
 Často se pseudoelementy používají k doplňování ikon k tlačítku a podobným účelům. Vyšší dívčí jsou pak různé triky, z nichž nejpopulárnější je tzv. [clearfix, který ošetřuje trable s plovoucími elementy](https://css-tricks.com/snippets/css/clear-fix/). S nástupem [flexboxu](http://jecas.cz/flexbox) ovšem jeho význam a všudypřítomnost poklesly, takže není potřeba se s ním zabývat, dokud to nebude potřeba.
 
 *<small>V praxi se to často porušuje a to i proto, že současně toho nelze 100% dosáhnout. Ale to přenechme vášnivým debatám na toto téma na diskuzních fórech.</small>
+
+## CSS custom properties
+
+```css
+:root {
+    --button-size: 1rem;
+}
+
+header {
+    --button-size: 2rem;
+}
+
+footer {
+    --button-size: 0.75rem;
+}
+
+.btn {
+    padding: calc(var(--button-size) / 2) var(--button-size)
+    margin-bottom: var(--button-size);
+    border-radius: calc(var(--button-size) / 5);
+    font-size: var(--button-size);
+}
+
+p {
+    font-size: var(--paragraph-size, 1.2rem); /* za čárkou výchozí hodnota */
+}
+
+```
+
+
+## Odkazy
+
+- [CSS proměnné (nebo také autorské či volitelné vlastnosti)](https://www.vzhurudolu.cz/prirucka/css-promenne) – zevrubný výklad pro pokročilé
