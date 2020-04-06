@@ -6,7 +6,7 @@ Krátký odkaz na stažení: [https://is.gd/webaz10](https://is.gd/webaz10)
 
 - [Centrování prvků](priklady/01-centrovani)
 - [Způsoby připojení CSS](#způsoby-připojení-css)
-- [CSS Specificita](#selektory-ajejich-specificita)  
+- [CSS Specificita](#selektory-ajejich-specificita)
 - [Pseudotřídy](priklady/03-pseudotridy)
   - [CSS Diner](https://flukeout.github.io/)
 - [Pseudoelementy](priklady/04-pseudoelementy)
@@ -16,11 +16,11 @@ Krátký odkaz na stažení: [https://is.gd/webaz10](https://is.gd/webaz10)
 
 ## Způsoby připojení CSS
 
-Zatím jsme se seznámili s připojením CSS jako externího souboru pomocí značky `link`. Je to asi nejběžnější způsob a v mnoha ohledech nejvýhodnější, ale je dobré znát i ostatní možnosti, protože i ty mají své použití. A přinejmenším se s nimi můžete setkat na jiných projektech. 
+Zatím jsme se seznámili s připojením CSS jako externího souboru pomocí značky `link`. Je to asi nejběžnější způsob a v mnoha ohledech nejvýhodnější, ale je dobré znát i ostatní možnosti, protože i ty mají své použití. A přinejmenším se s nimi můžete setkat na jiných projektech.
 
 1. externí soubor nebo více souborů CSS pomocí tagu `link`
     Známe již celkem důvěrně, pouze poznamenáme, že lze takto připojit i více souborů CSS (jeden pro obecné styly písma  a barev, další pro konkrétní stránku), aby se zbytečně nestahovaly styly, které se na stránce nepoužijí.
-    
+
     ```html
     <link rel="stylesheet" href="/styles/typography.css">
     <link rel="stylesheet" href="/styles/contact.css">
@@ -44,7 +44,7 @@ Zatím jsme se seznámili s připojením CSS jako externího souboru pomocí zna
 
 3. tzv. inline styly, přímo do otvírací značky prostřednictvím atributu `style`
     Někdy nemáme možnost zasáhnout do kódu jinak než tímto způsobem. Nejčastěji jsme k tomu nuceni při úpravě obsahu stránky přes nějaký redakční systém. Dále se tento způsob využívá při tvorbě HTML e-mailů.
-    
+
     `<p style="max-width: 20rem; color: silver;">Text odstavce s maximální šířkou 20 rem a šedou barvou písma.</p> `
 
 4. pomocí jazyka JavaScript
