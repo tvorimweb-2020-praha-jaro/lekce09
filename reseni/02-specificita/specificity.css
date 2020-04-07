@@ -25,6 +25,11 @@ h1.heading--main {
     color: maroon;
 }
 
+/* 0,1,1 */
+header .heading--main {
+    color: crimson;
+}
+
 /* 0,1,0 */
 .heading--main {
     color: crimson;
@@ -37,7 +42,7 @@ header h1 {
 
 /* 0,0,1 */
 h1 {
-    color: black !important;
+    color: black !important; /* s important je hodnota specificity 1,0,0,0,1 */
 }
 
 /* 0,0,1 */
